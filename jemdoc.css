@@ -497,3 +497,9 @@ p.pub_author{
 p.pub_link{
 	font-size: 14px	
 }
+
+.prj_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
