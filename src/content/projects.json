@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Research", "list": [
+        {
+            "name": "MicNest", 
+            "url": "https://micnest.github.io/", 
+            "content": "An acoustic localization system for precise drone landing. MicNest is able to localize a drone <b>120 m</b> away with <b>0.53%</b> relative localization error at <b>20 Hz</b> location update frequency.", 
+            "figure": "./files/Fig/MicNest.png",
+            "figurewidth": "500",
+            "title": "Acoustic Localizaiton System for Precise Drone Landing"
+        },
+        {
+            "name": "MotorBeat", 
+            "url": "https://dl.acm.org/doi/10.1145/3517255", 
+            "content": "An acoustic communication approach that connects small appliances to the Internet. Our key idea is to exploit direct current (DC) motors, which are common components of small appliances, to transmit acoustic messages to a smart speaker. The communciaiton range is up to <b>10 m</b>.", 
+            "figure": "./files/Fig/MotorBeat.png",
+            "figurewidth": "600",
+            "title": "Acoustic Communication System for Small Appliances"
+        }
+        ]
+    }
+]

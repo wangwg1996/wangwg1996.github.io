@@ -1,0 +1,180 @@
+[
+    {
+        "bibtex": "@inproceedings{weiguo2023micnest,\n  title     = {MicNest: Long-Range Instant Acoustic Localization of Drones in Precise Landing},\n  author    = {Wang, Weiguo and Mottola, Luca and He, Yuan and Li, Jinming and Sun, Yimiao and Li, Shuai and Jing, Hua and Wang, Yulei},\n  booktitle = {Proceedings of the 20th Conference on Embedded Networked Sensor Systems, {ACM Sensys'22}},\n  publisher = {Association for Computing Machinery},\n  address    = {New York, NY, USA},\n  pages     = {504–517},\n  year      = {2022},\n   doi       = {10.1145/3560905.3568515}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/MicNest.pdf",
+            "slides": "./files/Slides/MicNest.pdf",
+            "code": null,
+            "demo": "https://micnest.github.io/",
+            "award":"https://micnest.github.io/"
+        },
+        "figure": "./files/Fig/MicNest.png",
+        "abstract": "We present MicNest: an acoustic localization system enabling precise landing of aerial drones. Drone landing is a crucial step in a drone's operation, especially as high-bandwidth wireless networks, such as 5G, enable beyond-line-of-sight operation in a shared airspace and applications such as instant asset delivery with drones gain traction. In MicNest, multiple microphones are deployed on a landing platform in carefully devised configurations. The drone carries a speaker transmitting purposefully-designed acoustic pulses. The drone may be localized as long as the pulses are correctly detected. Doing so is challenging: i) because of limited transmission power, propagation attenuation, background noise, and propeller interference, the Signal-to-Noise Ratio (SNR) of received pulses is intrinsically low; ii) the pulses experience non-linear Doppler distortion due to the physical drone dynamics while airborne; iii) as location information is to be used during landing, the processing latency must be reduced to effectively feed the flight control loop. To tackle these issues, we design a novel pulse detector, Matched Filter Tree (MFT), whose idea is to convert pulse detection to a tree search problem. We further present three practical methods to accelerate tree search jointly. Our real-world experiments show that MicNest is able to localize a drone 120 m away with 0.53% relative localization error at 20 Hz location update frequency."
+    },
+    {
+        "bibtex": "@inproceedings{yimiao2023aim,\n  title     = {AIM: Acoustic Inertial Measurement for Indoor Drone Localization and Tracking},\n  author    = {Sun, Yimiao and Wang, Weiguo and Mottola, Luca and Wang, Ruijin and He, Yuan},\n  booktitle = {Proceedings of the 20th Conference on Embedded Networked Sensor Systems, {ACM Sensys'22}},\n  publisher = {Association for Computing Machinery},\n  address    = {New York, NY, USA},\n  pages     = {476–488},\n  year      = {2022},\n   doi       = {10.1145/3560905.3568499}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/AIM.pdf",
+            "slides": "./files/Slides/AIM.pdf",
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": "./files/Fig/AIM.png",
+        "abstract": "We present Acoustic Inertial Measurement (AIM), a one-of-a-kind technique for indoor drone localization and tracking. Indoor drone localization and tracking are arguably a crucial, yet unsolved challenge: in GPS-denied environments, existing approaches enjoy limited applicability, especially in Non-Line of Sight (NLoS), require extensive environment instrumentation, or demand considerable hardware/software changes on drones. In contrast, AIM exploits the acoustic characteristics of the drones to estimate their location and derive their motion, even in NLoS settings. We tame location estimation errors using a dedicated Kalman filter and the Interquartile Range rule (IQR). We implement AIM using an off-the-shelf microphone array and evaluate its performance with a commercial drone under varied settings. Results indicate that the mean localization error of AIM is 46% lower than commercial UWB-based systems in complex indoor scenarios, where state-of-the-art infrared systems would not even work because of NLoS settings. We further demonstrate that AIM can be extended to support indoor spaces with arbitrary ranges and layouts without loss of accuracy by deploying distributed microphone arrays."
+    },
+    {
+        "bibtex": "@ARTICLE{weiguo2022symphony,\n  title     = {Localizing Multiple Acoustic Sources With a Single Microphone Array},\n  author    = {Wang, Weiguo and Li, Jinming and He, Yuan and Liu, Yunhao},\n  journal={IEEE Transactions on Mobile Computing, {IEEE TMC}},\n  publisher = {IEEE},\n pages     = {1-15},\n  year      = {2022},\n   doi       = {10.1109/TMC.2022.3186644}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Symphony_tmc.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": "The ability to localize acoustic sources can greatly improve the perception of smart devices (e.g., a smart speaker like Amazon Alexa). In this work, we study the problem of concurrently localizing multiple acoustic sources with a single smart device. Our proposal called Symphony is the first complete solution to tackle the above problem, including method, theory, and practice. The method stems from the insight that the geometric layout of microphones on the array determines the unique relationship among signals from the same source along the same arriving path. We also establish the theoretical model of Symphony, which reveals the relation between localization performance (resolution and coverage) and impacting factors (sampling rate, array aperture, and array-wall distance). Moreover, the ability to separate and localize multiple sources is also studied theoretically and numerically. We implement Symphony with different types of commercial off-the-shelf microphone arrays and evaluate its performance under different settings. The results show that Symphony has a median localization error of 0.662 m."
+    },
+    {
+        "bibtex": "@article{weiguo2022motorbeat,\n  title     = {MotorBeat: Acoustic Communication for Hom Appliances via Variable Pulse Width Modulation},\n  author    = {Wang, Weiguo  and Li, Jinming  and He, Yuan  and Guo, Xiuzhen  and Liu, Yunhao},\n  booktitle = {Proceedings of the 2022 ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, {ACM Ubicomp/IMWUT'22}},\n  publisher = {Association for Computing Machinery},\n  address    = {Atlanta, USA and Cambridge, UK},\n  pages     = {31:1--31:24},\n  year      = {2022},\n   doi       = {10.1145/3517255}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Motorbeat.pdf",
+            "slides": "./files/Slides/motorbeat_slides.pptx",
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": "./files/Fig/motorbeat_illustration.png",
+        "abstract": "More and more home appliances are now connected to the Internet, thus enabling various smart home applications. However, a critical problem that may impede the further development of smart home is overlooked: Small appliances account for the majority of home appliances, but they receive little attention and most of them are cut off from the Internet. To fill this gap, we propose MotorBeat, an acoustic communication approach that connects small appliances to a smart speaker. Our key idea is to exploit direct current (DC) motors, which are common components of small appliances, to transmit acoustic messages. We design a novel scheme named Variable Pulse Width Modulation (V-PWM) to drive DC motors. MotorBeat achieves the following 3C goals: (1) Comfortable to hear, (2) Compatible with multiple motor modes, and (3) Concurrent transmission. We implement MotorBeat with commercial devices and evaluate its performance on three small appliances and ten DC motors. The results show that the communication range can be up to 10 m."
+    },
+    {
+        "bibtex": "@inproceedings{weiguo2020symphony,\n  title     = {Symphony: Localizing Multiple Acoustic Sources with a Single Microphone Array},\n  author    = {Wang, Weiguo  and Li, Jinming  and He, Yuan and Liu, Yunhao},\n  booktitle = {Proceedings of the 18th Conference on Embedded Networked Sensor Systems, {ACM Sensys'20}},\n  publisher = {Association for Computing Machinery},\n  address    = {Virtual Event},\n  pages     = {82--94},\n  year      = {2020},\n   doi       = {10.1145/3384419.3430724}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Symphony_sensys.pdf",
+            "slides": "./files/Slides/symphony_slides.pptx",
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": "./files/Fig/symphony_illustration.jpg",
+        "abstract": "Sound recognition is an important and popular function of smart devices. The location of sound is basic information associated with the acoustic source. Apart from sound recognition, whether the acoustic sources can be localized largely affects the capability and quality of the smart device’s interactive functions. In this work, we study the problem of concurrently localizing multiple acoustic sources with a smart device (e.g., a smart speaker like Amazon Alexa). The existing approaches either can only localize a single source, or require deploying a distributed network of microphone arrays to function. Our proposal called Symphony is the first approach to tackle the above problem with a single microphone array. The insight behind Symphony is that the geometric layout of microphones on the array determines the unique relationship among signals from the same source along the same arriving path, while the source’s location determines the DoAs (direction-of-arrival) ofsignals along different arriving paths. Symphony therefore includes a geometry-based filtering module to distinguish signals from different sources along different paths and a coherence-based module to identify signals from the same source. We implement Symphony with different types of commercial off-the-shelf microphone arrays and evaluate its performance under different settings. The results show that Symphony has a median localization error of 0.694m, which is 68% less than that of the state-of-the-art approach."
+    },
+    {
+        "bibtex": "@inproceedings{guo2021gw,\n  title     = {Dancing Waltz with Ghosts: Measuring Sub-mm-Level 2D Rotor Orbit with a Single mmWave Radar},\n  author = {Guo, Junchen and Jin, Meng  and He, Yuan and Wang, Weiguo  and Liu, Yunhao },\n  booktitle = {Proceedings of the 20th International Conference on Information Processing in Sensor Networks, {ACM IPSN'19}},\n  publisher = {IEEE},\n  address    = {Nashville, TN, USA},\n  pages     = {77--92},\n  year      = {2021},\n   doi       = {10.1145/3412382.3458258}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/GWaltz_IPSN.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": "Recently, mmWave has been widely used in fine-grained sensing applications due to its short wavelength and large bandwidth. One mmWave device usually can measure the target’s 1D micro-displacement along the line-of-sight (LOS) direction. In this work, we try to empower mmWave with the capability of measuring 2D micro-displacements. Our insight is that although the mmWave reflection from one path contains only 1D observation, the spatial separability of mmWave offers an opportunity to separate multipath reflections from the received signal. Combining the coherent observations from multipath reflections can restore the 2D orbit of the target. Based on this insight, we present GWaltz, a mmWave sensing system that manages to measure sub-𝑚𝑚-level 2D orbits of rotating machinery. In GWaltz, we first reveal the relationship between the rotor’s movement and the observed ghost multipath reflections (GMRs) and then design a set of novel signal processing techniques to restore the rotor orbit from the poor-quality GMR signals. We implement GWaltz with a commercial mmWave radar, and our evaluation results show that it achieves an absolute error of about 8.42𝑢𝑚 when measuring 100𝑢𝑚-diameter rotor orbits."
+    },
+    {
+        "bibtex": "@inproceedings{weiguo2020chordmics,\n  title     = {ChordMics: Acoustic Signal Purification with Distributed Microphones},\n  author    = {Wang, Weiguo  and Li, Jinming  and Jin, Meng and He, Yuan},\n  booktitle = {Proceedings of the 29th International Conference on Computer Communications and Networks, {IEEE ICCCN'20}},\n  publisher = {IEEE},\n  address    = {Honolulu, HI, USA},\n  pages     = {1--9},\n  year      = {2019},\n   doi       = {10.1109/ICCCN49398.2020.9209642}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Chordmics.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },          
+        "figure": null,
+        "abstract": "Acoustic signal acts as an essential input to many systems. However, the pure acoustic signal is very difficult to extract, especially in noisy environments. Existing beamforming systems are able to extract the signal transmitted from certain directions. However, since microphones are centrally deployed, these systems have limited coverage and low spatial resolution. We overcome the above limitations and present ChordMics, a distributed beamforming system. By leveraging the spatial diversity of the distributed microphones, ChordMics is able to extract the acoustic signal from arbitrary points. To realize such a system, we further address the fundamental challenge in distributed beamforming: aligning the signals captured by distributed and unsynchronized microphones. We implement ChordMics and evaluate its performance under both LOS and NLOS scenarios. The evaluation results tell that ChordMics can deliver higher SINR than the centralized microphone array. The average performance gain is up to 15dB."
+    },
+    {
+        "bibtex": "@inproceedings{weiguo2019adacomm,\n  title     = {AdaComm: Tracing Channel Dynamics for Reliable Cross-Technology Communication},\n  author    = {Wang, Weiguo  and Zheng, Xiaolong  and He, Yuan and Guo, Xiuzhen },\n  booktitle = {Proceedings of the 16th Annual {IEEE} International Conference on Sensing, Communication, and Networking, {IEEE SECON'19}},\n  publisher = {IEEE},\n  address    = {Boston, MA, USA},\n  pages     = {1--9},\n  year      = {2019},\n   doi       = {10.1109/SAHCN.2019.8824843}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Adacomm.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": "Cross-Technology Communication (CTC) is anemerging technology to support direct communication between wireless devices that follow different standards. In spite of the many different proposals from the community to enable CTC, the performance aspect of CTC is an equally important problem but has seldom been studied before. We find this problem is extremely challenging, due to the following reasons: on one hand, a link for CTC is essentially different from a conventional wireless link. The conventional link indicators like RSSI (received signal strength indicator) and SNR (signal to noise ratio) cannot be used to directly characterize a CTC link. On the other hand, the indirect indicators like PER (packet error rate), which is adopted by many existing CTC proposals, cannot capture the short-term link behavior. As a result, the existing CTC proposals fail to keep reliable performance under dynamic channel conditions. In order to address the above challenge, we in this paper propose AdaComm, a generic framework to achieve self-adaptive CTC in dynamic channels. Instead of reactively adjusting the CTC sender, AdaComm adopts online learning mechanism to adaptively adjust the decoding model at the CTC receiver. The self-adaptive decoding model automatically learns the effective features directly from the raw received signals that are embedded with the current channel state. With the lossless channel information, AdaComm further adopts the fine tuning and full training modes to cope with the continuous and abrupt channel dynamics. We implement AdaComm and integrate it with two existing CTC approaches that respectively employ CSI (channel state information) and RSSI as the information carrier. The evaluation results demonstrate that AdaComm can significantly reduce the SER (symbol error rate) by 72.9% and 49.2%, respectively, compared with the existing approaches."
+    }
+]
+
+
