@@ -1,5 +1,27 @@
 [
     {
+        "bibtex": "@article{weiguo2023micnest,\n  title     = {Acoustic Localization System for Precise Drone Landing},\n  author    = {He, Yuan and Wang, Weiguo  and Luca Mottola  and  Li, Shuai and Sun, Yimiao and Li, Jinming  and Jing, Hua  and Wang, Ting  and Wang, Yulei  },\n  booktitle = {IEEE Transactions on Mobile Computing, {IEEE TMC}},\n  publisher = {IEEE},\n  year      = {2023},\n }\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Weiguo Wang"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": null,
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": "We present MICNEST: an acoustic localization system enabling precise drone landing. In MICNEST, multiple microphones are deployed on a landing platform in carefully devised configurations. The drone carries a speaker transmitting purposefully-designed acoustic pulses. The drone may be localized as long as the pulses are correctly detected. Doing so is challenging: i) because of limited transmission power, propagation attenuation, background noise, and propeller interference, the Signal-to-Noise Ratio (SNR) of received pulses is intrinsically low; ii) the pulses experience non-linear Doppler distortion due to the physical drone dynamics; iii) as location information is used during landing, the processing latency must be reduced to effectively feed the flight control loop. To tackle these issues, we design a novel pulse detector, Matched Filter Tree (MFT), whose idea is to convert pulse detection to a tree search problem. We further present three practical methods to accelerate tree search jointly. Our experiments show that MICNEST can localize a drone 120 m away with 0.53% relative localization error at 20 Hz location update frequency. For navigating drone landing, MICNEST can achieve a success rate of 94 %. The average landing error (distance between landing point and target point) is only 4.3 cm."
+    },
+    {
         "bibtex": "@inproceedings{weiguo2023micnest,\n  title     = {MicNest: Long-Range Instant Acoustic Localization of Drones in Precise Landing},\n  author    = {Wang, Weiguo and Mottola, Luca and He, Yuan and Li, Jinming and Sun, Yimiao and Li, Shuai and Jing, Hua and Wang, Yulei},\n  booktitle = {Proceedings of the 20th Conference on Embedded Networked Sensor Systems, {ACM Sensys'22}},\n  publisher = {Association for Computing Machinery},\n  address    = {New York, NY, USA},\n  pages     = {504–517},\n  year      = {2022},\n   doi       = {10.1145/3560905.3568515}\n}\n",
         "authors": {
             "boldAuthors": [
@@ -16,7 +38,7 @@
             "slides": "./files/Slides/MicNest.pdf",
             "code": null,
             "demo": "https://micnest.github.io/",
-            "award":"https://micnest.github.io/"
+            "award":"https://sensys.acm.org/2022/award/"
         },
         "figure": "./files/Fig/MicNest.png",
         "abstract": "We present MicNest: an acoustic localization system enabling precise landing of aerial drones. Drone landing is a crucial step in a drone's operation, especially as high-bandwidth wireless networks, such as 5G, enable beyond-line-of-sight operation in a shared airspace and applications such as instant asset delivery with drones gain traction. In MicNest, multiple microphones are deployed on a landing platform in carefully devised configurations. The drone carries a speaker transmitting purposefully-designed acoustic pulses. The drone may be localized as long as the pulses are correctly detected. Doing so is challenging: i) because of limited transmission power, propagation attenuation, background noise, and propeller interference, the Signal-to-Noise Ratio (SNR) of received pulses is intrinsically low; ii) the pulses experience non-linear Doppler distortion due to the physical drone dynamics while airborne; iii) as location information is to be used during landing, the processing latency must be reduced to effectively feed the flight control loop. To tackle these issues, we design a novel pulse detector, Matched Filter Tree (MFT), whose idea is to convert pulse detection to a tree search problem. We further present three practical methods to accelerate tree search jointly. Our real-world experiments show that MicNest is able to localize a drone 120 m away with 0.53% relative localization error at 20 Hz location update frequency."

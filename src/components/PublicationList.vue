@@ -53,7 +53,17 @@ const pubArr = computed(() => {
         pubJson[i].authors.correspondingAuthors
         && pubJson[i].authors.correspondingAuthors.includes(authorString)
       ) {
-        finalAuthorString = `${finalAuthorString}<sup>*</sup>`
+        //finalAuthorString = `${finalAuthorString}<sup>*</sup>`
+        if ( pubJson[i].authors.boldAuthors && pubJson[i].authors.boldAuthors.includes(authorString))
+        {
+          finalAuthorString = `${finalAuthorString} <b>(Corresponding Author)</b>`
+        }
+        // else
+        // {
+        //   finalAuthorString = `${finalAuthorString} (Corresponding Author)`
+          
+        // }
+        
       }
       if (
         pubJson[i].authors.equalContributionAuthors
@@ -108,8 +118,8 @@ function copyToClipboard(text, pubId, cslTemplateType) {
 <template>
   <h2  style="font-size: 20pt"> Publications</h2>
   <p>
-    <b>bold</b>: myself.
-    <sup>*</sup>: corresponding author(s).
+    <!-- <b>bold</b>: myself.
+    <sup>*</sup>: corresponding author(s). -->
     <!-- <u>underline</u>: equal contributions. -->
   </p>
   <ul class="pub-list" reversed>
