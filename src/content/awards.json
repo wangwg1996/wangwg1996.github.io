@@ -1,10 +1,11 @@
 [
     {
         "category": "Honors", "list": [
+            {"date": "2023", "content": "GetMobile Research Highlights | ACM GetMobile 2023"},
             {"date": "2022", "content": "Best Paper Runner-Up Award (<u>Top 2 out of all 209 submissions</u>) | ACM SenSys 2022"},
-            {"date": "2022", "content": "The First Prize Scholarship, Tsinghua University | 清华大学一等奖学金"},
-            {"date": "2021", "content": "The First Prize Scholarship, Tsinghua University | 清华大学一等奖学金"},
-            {"date": "2019", "content": "The Second Prize Scholarship, Tsinghua University | 清华大学二等奖学金"},
+            {"date": "2022", "content": "The First Prize Scholarship, Tsinghua University | 清华大学综合一等奖学金"},
+            {"date": "2021", "content": "The First Prize Scholarship, Tsinghua University | 清华大学综合一等奖学金"},
+            {"date": "2019", "content": "The Second Prize Scholarship, Tsinghua University | 清华大学综合二等奖学金"},
             {"date": "2018", "content": "Outstanding Undergraduate, UESTC | 电子科技大学优秀本科毕业生"},
             {"date": "2017", "content": "The First Prize Scholarship, UESTC | 电子科技大学人民特等奖学金"},
             {"date": "2016", "content": "National Scholarship, Ministry of Education | 国家奖学金"},
