@@ -1,5 +1,53 @@
 [
     {
+        "bibtex": "@inproceedings{weiguo2023metaspeaker,\n  title     = {Meta-Speaker: Acoustic Source Projection by Exploiting Air Nonlinearity},\n  author    = {Weiguo Wang and Yuan He and Meng Jin and Yimiao Sun and Xiuzhen Guo},\n  booktitle = {Proceedings of the 29th International Conference on Mobile Computing and Networking, {ACM MobiCom'23}},\n  publisher = {ACM},\n  year      = {2023},\n   address    = {Madrid, Spain},  \n doi       = {10.1145/3570361.3613279}\n}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": null,
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": ""
+    },
+
+    {
+        "bibtex": "@article{zhang2023survey,\n title={A Survey of mmWave-Based Human Sensing: Technology, Platforms and Applications},\n author={Zhang, Jia and Xi, Rui and He, Yuan and Sun, Yimiao and Guo, Xiuzhen and Wang, Weiguo and Na, Xin and Liu, Yunhao and Shi, Zhenguo and Gu, Tao},\n journal={IEEE Communications Surveys & Tutorials},\n year={2023},\n publisher={IEEE} \n }",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/A_Survey_of_mmWave.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": ""
+    },
+
+
+    
+    {
         "bibtex": "@article{weiguo2023micnest,\n  title     = {Acoustic Localization System for Precise Drone Landing},\n  author    = {He, Yuan and Wang, Weiguo  and Luca Mottola  and  Li, Shuai and Sun, Yimiao and Li, Jinming  and Jing, Hua  and Wang, Ting  and Wang, Yulei  },\n  booktitle = {IEEE Transactions on Mobile Computing, {IEEE TMC}},\n  publisher = {IEEE},\n  year      = {2023},\n }\n",
         "authors": {
             "boldAuthors": [
