@@ -8,6 +8,7 @@ import CodeBadge from './badges/CodeBadge.vue'
 import DemoBadge from './badges/DemoBadge.vue'
 import AwardBadge from './badges/AwardBadge.vue'
 import PageBadge from './badges/PageBadge.vue'
+import HighlightsBadge from './badges/HighlightsBadge.vue'
 import { AclCsl, Gb7714Csl } from '../utils'
 
 import pubJson from '../content/pub.json'
@@ -137,6 +138,7 @@ function copyToClipboard(text, pubId, cslTemplateType) {
           <CodeBadge :codeUrl="pub.resources.code" />
           <PageBadge :demoUrl="pub.resources.demo" />
           <AwardBadge :demoUrl="pub.resources.award" />
+          <HighlightsBadge :demoUrl="pub.resources.highlight" />
 
         </div>
         

@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <a class="badge badge-demo" v-if="demoUrl" target="_blank" :href="demoUrl">
-    <i class="fa fa-trophy" aria-hidden="true"></i>
-    Best Paper Runner Up
+    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+    Research Highlights
   </a>
 </template>
