@@ -13,7 +13,7 @@
         "note": "",
         "resources": {
             "pdf": "./files/PDF/Metaspeaker_mobicom.pdf",
-            "slides": null,
+            "slides": "./files/Slides/MetaSpeaker.pptx",
             "code": null,
             "demo": null,
             "award":null,
