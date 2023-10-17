@@ -1,6 +1,7 @@
 [
     {
         "category": "Honors", "list": [
+            {"date": "2023", "content": "Doctoral Dissertation Award, ACM SIGBED China | ACM 中国SIGBED 优博奖"},
             {"date": "2023", "content": "GetMobile Research Highlights | ACM GetMobile 2023"},
             {"date": "2023", "content": "Outstanding Graduate | Software School, Tsinghua University,"},
             {"date": "2022", "content": "Best Paper Runner-Up Award (<u>Top 2 out of all 209 submissions</u>) | ACM SenSys 2022"},
