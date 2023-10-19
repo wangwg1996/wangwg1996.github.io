@@ -1,0 +1,73 @@
+[
+    {
+        "bibtex": "@article{zhang2023survey,\n title={A Survey of mmWave-Based Human Sensing: Technology, Platforms and Applications},\n author={Zhang, Jia and Xi, Rui and He, Yuan and Sun, Yimiao and Guo, Xiuzhen and Wang, Weiguo and Na, Xin and Liu, Yunhao and Shi, Zhenguo and Gu, Tao},\n journal={IEEE Communications Surveys & Tutorials},\n year={2023},\n publisher={IEEE} \n }",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/A_Survey_of_mmWave.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null,
+            "highlight":null
+        },
+        "figure": null,
+        "abstract": ""
+    },
+    {
+        "bibtex": "@article{weiguo2023micnest,\n  title     = {Acoustic Localization System for Precise Drone Landing},\n  author    = {He, Yuan and Wang, Weiguo  and Luca Mottola  and  Li, Shuai and Sun, Yimiao and Li, Jinming  and Jing, Hua  and Wang, Ting  and Wang, Yulei  },\n  booktitle = {IEEE Transactions on Mobile Computing, {IEEE TMC}},\n  publisher = {IEEE},\n  year      = {2023},\n }\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Weiguo Wang"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/MicNest_tmc_earlyaccess.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null,
+            "highlight":null
+        },
+        "figure": null,
+        "abstract": "We present MICNEST: an acoustic localization system enabling precise drone landing. In MICNEST, multiple microphones are deployed on a landing platform in carefully devised configurations. The drone carries a speaker transmitting purposefully-designed acoustic pulses. The drone may be localized as long as the pulses are correctly detected. Doing so is challenging: i) because of limited transmission power, propagation attenuation, background noise, and propeller interference, the Signal-to-Noise Ratio (SNR) of received pulses is intrinsically low; ii) the pulses experience non-linear Doppler distortion due to the physical drone dynamics; iii) as location information is used during landing, the processing latency must be reduced to effectively feed the flight control loop. To tackle these issues, we design a novel pulse detector, Matched Filter Tree (MFT), whose idea is to convert pulse detection to a tree search problem. We further present three practical methods to accelerate tree search jointly. Our experiments show that MICNEST can localize a drone 120 m away with 0.53% relative localization error at 20 Hz location update frequency. For navigating drone landing, MICNEST can achieve a success rate of 94 %. The average landing error (distance between landing point and target point) is only 4.3 cm."
+    },
+
+    {
+        "bibtex": "@ARTICLE{weiguo2022symphony,\n  title     = {Localizing Multiple Acoustic Sources With a Single Microphone Array},\n  author    = {Wang, Weiguo and Li, Jinming and He, Yuan and Liu, Yunhao},\n  journal={IEEE Transactions on Mobile Computing, {IEEE TMC}},\n  publisher = {IEEE},\n pages     = {1-15},\n  year      = {2022},\n   doi       = {10.1109/TMC.2022.3186644}\n}\n",
+        "authors": {
+            "boldAuthors": [
+                "Weiguo Wang"
+            ],
+            "correspondingAuthors": [
+                "Yuan He"
+            ],
+            "equalContributionAuthors": null
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/Symphony_tmc.pdf",
+            "slides": null,
+            "code": null,
+            "demo": null,
+            "award":null
+        },
+        "figure": null,
+        "abstract": "The ability to localize acoustic sources can greatly improve the perception of smart devices (e.g., a smart speaker like Amazon Alexa). In this work, we study the problem of concurrently localizing multiple acoustic sources with a single smart device. Our proposal called Symphony is the first complete solution to tackle the above problem, including method, theory, and practice. The method stems from the insight that the geometric layout of microphones on the array determines the unique relationship among signals from the same source along the same arriving path. We also establish the theoretical model of Symphony, which reveals the relation between localization performance (resolution and coverage) and impacting factors (sampling rate, array aperture, and array-wall distance). Moreover, the ability to separate and localize multiple sources is also studied theoretically and numerically. We implement Symphony with different types of commercial off-the-shelf microphone arrays and evaluate its performance under different settings. The results show that Symphony has a median localization error of 0.662 m."
+    }
+]
+
+
