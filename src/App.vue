@@ -37,7 +37,7 @@ import ProjectList from './components/ProjectList.vue'
         <a href="http://tns.thss.tsinghua.edu.cn/sun/" target="_blank">The <b>SUN</b> Group</a>
         | <a href="http://www.greenorbs.org/people/heyuan/" target="_blank">Prof. Yuan He</a>
         | <a href="https://micnest.github.io/" target="_blank">Project MicNest</a>
-        <br><br>Updated by Weiguo Wang in Jul. 2023. 😜
+        <br><br>Updated by Weiguo Wang in Oct. 2023. 😜
       </div>
   </div>
   </footer>
