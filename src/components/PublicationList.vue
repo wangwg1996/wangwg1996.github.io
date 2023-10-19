@@ -11,20 +11,19 @@ import PageBadge from './badges/PageBadge.vue'
 import HighlightsBadge from './badges/HighlightsBadge.vue'
 import { AclCsl, Gb7714Csl } from '../utils'
 
-import pubConfJson from '../content/pub_conf.json'
-import pubJournalJson from '../content/pub_journal.json'
+import pubJson from '../content/pub.json'
 
 
-const pubArr_conf = computed(() => {
+const pubArr = computed(() => {
   let cslConfig = Cite.plugins.config.get('@csl')
   cslConfig.templates.add("acl", AclCsl)
   cslConfig.templates.add("gb7714", Gb7714Csl)
 
-  for (let i = 0; i < pubConfJson.length; i++) {
-    let cite = Cite(pubConfJson[i]["bibtex"])
-    pubConfJson[i]["entry"] = cite.get({ format: "real", type: "json", style: "csl" })[0]
-    pubConfJson[i]["bibString"] = cite.get({ format: "string", type: "string", style: "bibtex" })
-    pubConfJson[i]["acl"] = cite.format(
+  for (let i = 0; i < pubJson.length; i++) {
+    let cite = Cite(pubJson[i]["bibtex"])
+    pubJson[i]["entry"] = cite.get({ format: "real", type: "json", style: "csl" })[0]
+    pubJson[i]["bibString"] = cite.get({ format: "string", type: "string", style: "bibtex" })
+    pubJson[i]["acl"] = cite.format(
       "bibliography",
       {
         format: 'text',
@@ -32,7 +31,7 @@ const pubArr_conf = computed(() => {
         lang: 'en-US'
       }
     )
-    pubConfJson[i]["gb7714"] = cite.format(
+    pubJson[i]["gb7714"] = cite.format(
       "bibliography",
       {
         format: 'text',
@@ -42,21 +41,21 @@ const pubArr_conf = computed(() => {
     )
 
     let authors = []
-    for (let author of pubConfJson[i]["entry"]["author"]) {
+    for (let author of pubJson[i]["entry"]["author"]) {
       let authorString = `${author.given} ${author.family}`.trim()
       let finalAuthorString = authorString
       if (
-        pubConfJson[i].authors.boldAuthors
-        && pubConfJson[i].authors.boldAuthors.includes(authorString)
+        pubJson[i].authors.boldAuthors
+        && pubJson[i].authors.boldAuthors.includes(authorString)
       ) {
         finalAuthorString = `<b>${finalAuthorString}</b>`
       }
       if (
-        pubConfJson[i].authors.correspondingAuthors
-        && pubConfJson[i].authors.correspondingAuthors.includes(authorString)
+        pubJson[i].authors.correspondingAuthors
+        && pubJson[i].authors.correspondingAuthors.includes(authorString)
       ) {
         //finalAuthorString = `${finalAuthorString}<sup>*</sup>`
-        if ( pubConfJson[i].authors.boldAuthors && pubConfJson[i].authors.boldAuthors.includes(authorString))
+        if ( pubJson[i].authors.boldAuthors && pubJson[i].authors.boldAuthors.includes(authorString))
         {
           finalAuthorString = `${finalAuthorString} <b>(Corresponding Author)</b>`
         }
@@ -68,102 +67,26 @@ const pubArr_conf = computed(() => {
         
       }
       if (
-        pubConfJson[i].authors.equalContributionAuthors
-        && pubConfJson[i].authors.equalContributionAuthors.includes(authorString)
+        pubJson[i].authors.equalContributionAuthors
+        && pubJson[i].authors.equalContributionAuthors.includes(authorString)
       ) {
         finalAuthorString = `<u>${finalAuthorString}</u>`
       }
       authors.push(finalAuthorString)
     }
-    pubConfJson[i]["entry"]["authors"] = authors.join(", ")
+    pubJson[i]["entry"]["authors"] = authors.join(", ")
   }
-  return pubConfJson
+  return pubJson
 })
 
-
-
-const pubArr_journal = computed(() => {
-  let cslConfig = Cite.plugins.config.get('@csl')
-  cslConfig.templates.add("acl", AclCsl)
-  cslConfig.templates.add("gb7714", Gb7714Csl)
-
-  for (let i = 0; i < pubJournalJson.length; i++) {
-    let cite = Cite(pubJournalJson[i]["bibtex"])
-    pubJournalJson[i]["entry"] = cite.get({ format: "real", type: "json", style: "csl" })[0]
-    pubJournalJson[i]["bibString"] = cite.get({ format: "string", type: "string", style: "bibtex" })
-    pubJournalJson[i]["acl"] = cite.format(
-      "bibliography",
-      {
-        format: 'text',
-        template: "acl",
-        lang: 'en-US'
-      }
-    )
-    pubJournalJson[i]["gb7714"] = cite.format(
-      "bibliography",
-      {
-        format: 'text',
-        template: "gb7714",
-        lang: 'en-US'
-      }
-    )
-
-    let authors = []
-    for (let author of pubJournalJson[i]["entry"]["author"]) {
-      let authorString = `${author.given} ${author.family}`.trim()
-      let finalAuthorString = authorString
-      if (
-        pubJournalJson[i].authors.boldAuthors
-        && pubJournalJson[i].authors.boldAuthors.includes(authorString)
-      ) {
-        finalAuthorString = `<b>${finalAuthorString}</b>`
-      }
-      if (
-        pubJournalJson[i].authors.correspondingAuthors
-        && pubJournalJson[i].authors.correspondingAuthors.includes(authorString)
-      ) {
-        //finalAuthorString = `${finalAuthorString}<sup>*</sup>`
-        if ( pubJournalJson[i].authors.boldAuthors && pubJournalJson[i].authors.boldAuthors.includes(authorString))
-        {
-          finalAuthorString = `${finalAuthorString} <b>(Corresponding Author)</b>`
-        }
-        // else
-        // {
-        //   finalAuthorString = `${finalAuthorString} (Corresponding Author)`
-          
-        // }
-        
-      }
-      if (
-        pubJournalJson[i].authors.equalContributionAuthors
-        && pubJournalJson[i].authors.equalContributionAuthors.includes(authorString)
-      ) {
-        finalAuthorString = `<u>${finalAuthorString}</u>`
-      }
-      authors.push(finalAuthorString)
-    }
-    pubJournalJson[i]["entry"]["authors"] = authors.join(", ")
-  }
-  return pubJournalJson
-})
-
-
-let _show_conf = {}
-for (let pub of pubArr_conf.value) {
-  _show_conf[pub.entry.id] = { abs: false, bib: false }
+let _show = {}
+for (let pub of pubArr.value) {
+  _show[pub.entry.id] = { abs: false, bib: false }
 }
-const showFlag_conf = ref(_show_conf)
-
-
-let _show_journal = {}
-for (let pub of pubArr_journal.value) {
-  _show_journal[pub.entry.id] = { abs: false, bib: false }
-}
-const showFlag_journal = ref(_show_journal)
-
+const showFlag = ref(_show)
 
 let _copy = {}
-for (let pub of pubArr_conf.value) {
+for (let pub of pubArr.value) {
   _copy[pub.entry.id] = ""
 }
 const copyStatus = ref(_copy)
@@ -200,18 +123,16 @@ function copyToClipboard(text, pubId, cslTemplateType) {
     <sup>*</sup>: corresponding author(s). -->
     <!-- <u>underline</u>: equal contributions. -->
   </p>
-
-  <h3  style="font-size: 15pt"> Conference Papers</h3>
   <ul class="pub-list" reversed>
-    <li v-for="pub in pubArr_conf" :key="pub.entry.id">
+    <li v-for="pub in pubArr" :key="pub.entry.id">
       <a style="font-size: 15pt" :href="pub.entry.URL" target="_blank">{{ pub.entry.title }}</a><br>
       <p class="pub" v-html="pub.entry.authors"></p>
       <p class="pub"><em>{{ pub.entry["container-title"] }}</em>. {{ pub.entry.issued["date-parts"][0][0] }}.</p>
       <p class="pub note" v-if="pub.note">{{ pub.note }}</p>
       <div>
         <div>
-          <a class="badge badge-abs" @click="showFlag_conf[pub.entry.id].abs = !showFlag_conf[pub.entry.id].abs">Abstract</a>
-          <a class="badge badge-bib" @click="showFlag_conf[pub.entry.id].bib = !showFlag_conf[pub.entry.id].bib">BibTex</a>
+          <a class="badge badge-abs" @click="showFlag[pub.entry.id].abs = !showFlag[pub.entry.id].abs">Abstract</a>
+          <a class="badge badge-bib" @click="showFlag[pub.entry.id].bib = !showFlag[pub.entry.id].bib">BibTex</a>
           <SlidesBadge :slidesUrl="pub.resources.pdf" />
           <VideoBadge :videoUrl="pub.resources.slides" />
           <CodeBadge :codeUrl="pub.resources.code" />
@@ -221,9 +142,9 @@ function copyToClipboard(text, pubId, cslTemplateType) {
 
         </div>
         
-        <p class="text-block" v-if="showFlag_conf[pub.entry.id].abs">{{ pub.abstract }} <img :src=pub.figure  width="740" />      </p>
+        <p class="text-block" v-if="showFlag[pub.entry.id].abs">{{ pub.abstract }} <img :src=pub.figure  width="740" />      </p>
         
-        <div class="text-block" v-if="showFlag_conf[pub.entry.id].bib">  
+        <div class="text-block" v-if="showFlag[pub.entry.id].bib">  
           <button class="bib" @click.prevent="copyToClipboard(pub.bibtex, pub.entry.id, 'BibTeX')">Copy BibTeX</button>
           <button class="bib" @click.prevent="copyToClipboard(pub.acl, pub.entry.id, 'ACL')">Copy ACL</button>
           <button class="bib" @click.prevent="copyToClipboard(pub.gb7714, pub.entry.id, 'GB/T7714')">Copy
@@ -234,42 +155,6 @@ function copyToClipboard(text, pubId, cslTemplateType) {
       </div>
     </li>
   </ul>
-  
-  <br>
-  <h3  style="font-size: 15pt"> Journal Papers</h3>
-  <ul class="pub-list" reversed>
-    <li v-for="pub in pubArr_journal" :key="pub.entry.id">
-      <a style="font-size: 15pt" :href="pub.entry.URL" target="_blank">{{ pub.entry.title }}</a><br>
-      <p class="pub" v-html="pub.entry.authors"></p>
-      <p class="pub"><em>{{ pub.entry["container-title"] }}</em>. {{ pub.entry.issued["date-parts"][0][0] }}.</p>
-      <p class="pub note" v-if="pub.note">{{ pub.note }}</p>
-      <div>
-        <div>
-          <a class="badge badge-abs" @click="showFlag_journal[pub.entry.id].abs = !showFlag_journal[pub.entry.id].abs">Abstract</a>
-          <a class="badge badge-bib" @click="showFlag_journal[pub.entry.id].bib = !showFlag_journal[pub.entry.id].bib">BibTex</a>
-          <SlidesBadge :slidesUrl="pub.resources.pdf" />
-          <VideoBadge :videoUrl="pub.resources.slides" />
-          <CodeBadge :codeUrl="pub.resources.code" />
-          <PageBadge :demoUrl="pub.resources.demo" />
-          <AwardBadge :demoUrl="pub.resources.award" />
-          <HighlightsBadge :demoUrl="pub.resources.highlight" />
-
-        </div>
-        
-        <p class="text-block" v-if="showFlag_journal[pub.entry.id].abs">{{ pub.abstract }} <img :src=pub.figure  width="740" />      </p>
-        
-        <div class="text-block" v-if="showFlag_journal[pub.entry.id].bib">  
-          <button class="bib" @click.prevent="copyToClipboard(pub.bibtex, pub.entry.id, 'BibTeX')">Copy BibTeX</button>
-          <button class="bib" @click.prevent="copyToClipboard(pub.acl, pub.entry.id, 'ACL')">Copy ACL</button>
-          <button class="bib" @click.prevent="copyToClipboard(pub.gb7714, pub.entry.id, 'GB/T7714')">Copy
-            GB/T7714</button>
-          <span>{{ copyStatus[pub.entry.id] }}</span>
-          <p>{{ pub.bibtex }}</p>
-        </div>
-      </div>
-    </li>
-  </ul>
-
 </template>
 
 
