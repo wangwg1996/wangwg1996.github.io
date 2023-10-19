@@ -123,8 +123,11 @@ function copyToClipboard(text, pubId, cslTemplateType) {
     <sup>*</sup>: corresponding author(s). -->
     <!-- <u>underline</u>: equal contributions. -->
   </p>
+  <h3  style="font-size: 15pt"> Conference Papers</h3>
   <ul class="pub-list" reversed>
-    <li v-for="pub in pubArr" :key="pub.entry.id">
+    <template v-for="pub in pubArr"  :key="pub.entry.id">   
+    <!-- <li v-if="pub.type='conference'"> -->
+    <li v-if=pub.type>
       <a style="font-size: 15pt" :href="pub.entry.URL" target="_blank">{{ pub.entry.title }}</a><br>
       <p class="pub" v-html="pub.entry.authors"></p>
       <p class="pub"><em>{{ pub.entry["container-title"] }}</em>. {{ pub.entry.issued["date-parts"][0][0] }}.</p>
@@ -154,7 +157,46 @@ function copyToClipboard(text, pubId, cslTemplateType) {
         </div>
       </div>
     </li>
+    </template>
   </ul>
+
+  <h3  style="font-size: 15pt"> Journal Papers</h3>
+  <ul class="pub-list" reversed>
+    <template v-for="pub in pubArr"  :key="pub.entry.id">   
+    <!-- <li v-if="pub.type='conference'"> -->
+    <li v-if=!pub.type>
+      <a style="font-size: 15pt" :href="pub.entry.URL" target="_blank">{{ pub.entry.title }}</a><br>
+      <p class="pub" v-html="pub.entry.authors"></p>
+      <p class="pub"><em>{{ pub.entry["container-title"] }}</em>. {{ pub.entry.issued["date-parts"][0][0] }}.</p>
+      <p class="pub note" v-if="pub.note">{{ pub.note }}</p>
+      <div>
+        <div>
+          <a class="badge badge-abs" @click="showFlag[pub.entry.id].abs = !showFlag[pub.entry.id].abs">Abstract</a>
+          <a class="badge badge-bib" @click="showFlag[pub.entry.id].bib = !showFlag[pub.entry.id].bib">BibTex</a>
+          <SlidesBadge :slidesUrl="pub.resources.pdf" />
+          <VideoBadge :videoUrl="pub.resources.slides" />
+          <CodeBadge :codeUrl="pub.resources.code" />
+          <PageBadge :demoUrl="pub.resources.demo" />
+          <AwardBadge :demoUrl="pub.resources.award" />
+          <HighlightsBadge :demoUrl="pub.resources.highlight" />
+
+        </div>
+        
+        <p class="text-block" v-if="showFlag[pub.entry.id].abs">{{ pub.abstract }} <img :src=pub.figure  width="740" />      </p>
+        
+        <div class="text-block" v-if="showFlag[pub.entry.id].bib">  
+          <button class="bib" @click.prevent="copyToClipboard(pub.bibtex, pub.entry.id, 'BibTeX')">Copy BibTeX</button>
+          <button class="bib" @click.prevent="copyToClipboard(pub.acl, pub.entry.id, 'ACL')">Copy ACL</button>
+          <button class="bib" @click.prevent="copyToClipboard(pub.gb7714, pub.entry.id, 'GB/T7714')">Copy
+            GB/T7714</button>
+          <span>{{ copyStatus[pub.entry.id] }}</span>
+          <p>{{ pub.bibtex }}</p>
+        </div>
+      </div>
+    </li>
+    </template>
+  </ul>
+
 </template>
 
 
