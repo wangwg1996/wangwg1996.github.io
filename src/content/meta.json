@@ -1,9 +1,11 @@
 {
     "name": "Weiguo Wang (王伟国)",
-    "description": "<b>Biography:</b> I'm currently a Staff Engineer at NIO, Technology Planning. I obtained my Ph.D. degree from Tsinghua University, advised by [Prof. Yuan He](http://tns.thss.tsinghua.edu.cn/sun/members/YuanHe). I received my B.S. degree from UESTC in 2018. My research interests include mobile computing, wireless sensing and communication with especial focus on acoustics. I am enjoying building proof-of-concepts for innovative applications, encompassing both hardware and software aspects.<br><b>E-Mail:</b> <a>weiguo.wang2@nio.com</a> &nbsp; <a>wangwg1996@qq.com</a> &nbsp; <a>wwg18@mails.tsinghua.edu.cn</a> ",
+    "description": "I am currently a Staff Engineer at NIO Technology Planning, working on acoustic sensing for automobiles. I obtained my Ph.D. degree from Tsinghua University, advised by [Prof. Yuan He](http://tns.thss.tsinghua.edu.cn/sun/members/YuanHe). <br> My research interests lie at the intersection of mobile computing, wireless sensing, and communication, with a particular specialization in the field of acoustics. I am enjoying building proof-of-concepts for innovative applications, encompassing both hardware and software aspects.</a> <br><b>E-Mail:</b> <a>weiguo.wang2@nio.com</a> &nbsp; <a>wangwg1996@qq.com</a> &nbsp; <a>wwg18@mails.tsinghua.edu.cn</a> ",
     "contact": {
         "Google Scholar": {"icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=B8b1uqsAAAAJ&hl=en"},
         "ResearchGate": {"icon": "ai ai-researchgate", "url": "https://www.researchgate.net/profile/Weiguo-Wang-7"},
         "ORCID": {"icon": "ai ai-orcid", "url": "https://orcid.org/0000-0002-6207-2347"}
     }
 }
+
+
