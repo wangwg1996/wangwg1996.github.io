@@ -160,7 +160,7 @@ function copyToClipboard(text, pubId, cslTemplateType) {
     </template>
   </ul>
 
-  <h3  style="font-size: 15pt"> Journal Papers</h3>
+  <h3  style="font-size: 15pt"> Journal & Magazine Papers  </h3>
   <ul class="pub-list" reversed>
     <template v-for="pub in pubArr"  :key="pub.entry.id">   
     <!-- <li v-if="pub.type='conference'"> -->

@@ -1,5 +1,20 @@
 [
     {
+        "bibtex": "@article{wang2023acoustic,\ntitle = {Acoustic Localization of Drones in Precise Landing: The Research and Practice with MicNest},\nauthor = {Wang, Weiguo and He, Yuan and Mottola, Luca and Li, Shuai and Sun, Yimiao and Li, Jinming and Jing, Hua and Wang, Ting and Wang, Yulei},\njournal={ACM GetMobile: Mobile Computing and Communications},\npublisher = {ACM},\nyear = {2023},\n}\n",
+        "authors": {
+            "boldAuthors": ["Weiguo Wang"],
+            "correspondingAuthors": [
+                "Yuan He"
+            ]
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/MicNest_GetMobile.pdf",
+            "highlight": "https://www.sigmobile.org/pubs/getmobile/"
+        },
+        "type": false
+    },
+    {
         "bibtex": "@inproceedings{yimiao2023bifrost,\ntitle = {BIFROST: Reinventing WiFi Signals Based on Dispersion Effect for Accurate Indoor Localization},\nauthor = {Sun, Yimiao and He, Yuan and Zhang, Jiacheng and Na, Xin and Chen, Yande and Wang, Weiguo and Guo, Xiuzhen},\nbooktitle = {Proceedings of the 21th Conference on Embedded Networked Sensor Systems, {ACM SenSys'23}},\npublisher = {ACM},\nlocation   = {Istanbul, Turkiye},\nyear = {2023},\ndoi = {10.1145/3625687.3625786}\n}\n",
         "authors": {
             "boldAuthors": ["Weiguo Wang"],
