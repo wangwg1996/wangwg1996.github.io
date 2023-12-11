@@ -7,7 +7,7 @@
             "content": "An acoustic localization system for precise drone landing. MicNest is able to localize a drone <b>120 m</b> away with <b>0.53%</b> relative localization error at <b>20 Hz</b> location update frequency.", 
             "figure": "./files/Fig/MicNest.png",
             "figurewidth": "500",
-            "title": "Acoustic Localizaiton System for Precise Drone Landing"
+            "title": "Acoustic Localization System for Precise Drone Landing"
         },
         {
             "name": "MotorBeat", 
