@@ -1,4 +1,18 @@
 [
+
+    {
+        "bibtex": "@article{yimiao2023indoor,\ntitle = {{Indoor Drone Localization and Tracking Based on Acoustic Inertial Measurement}},\nauthor = {Sun, Yimiao and Wang, Weiguo and Mottola, Luca and Jia, Zhang and Wang, Ruijin and He, Yuan},\njournal = {IEEE Transactions on Mobile Computing, IEEE TMC},\nyear = {2023},\nvolume = {},\nnumber = {},\npages = {1-15},\ndoi = {10.1109/TMC.2023.3335860}\n}\n",
+        "authors": {
+            "boldAuthors": ["Weiguo Wang"]
+        },
+        "note": "",
+        "resources": {
+            "pdf": "./files/PDF/AIM_TMC.pdf"
+        },
+        "type": false,
+        "abstract": "We present Acoustic Inertial Measurement (AIM), a one-of-a-kind technique for indoor drone localization and tracking. Indoor drone localization and tracking are arguably a crucial, yet unsolved challenge: in GPS-denied environments, existing approaches enjoy limited applicability, especially in Non-Line of Sight (NLoS), require extensive environment instrumentation, or demand considerable hardware/software changes on drones. In contrast, AIM exploits the acoustic characteristics of the drones to estimate their location and derive their motion, even in NLoS settings. We tame location estimation errors using a dedicated Kalman filter and the Interquartile Range rule (IQR) and demonstrate that AIM can support indoor spaces with arbitrary ranges and layouts. We implement AIM using an off-the-shelf microphone array and evaluate its performance with a commercial drone under varied settings. Results indicate that the mean localization error of AIM is 46% lower than that of commercial UWB-based systems in a complex 10m×10m indoor scenario, where state-of-the-art infrared systems would not even work because of NLoS situations. When distributed microphone arrays are deployed, the mean error can be reduced to less than 0.5m in a 20m range, and even support spaces with arbitrary ranges and layouts."
+    },
+
     {
         "bibtex": "@article{wang2023acoustic,\ntitle = {Acoustic Localization of Drones in Precise Landing: The Research and Practice with MicNest},\nauthor = {Wang, Weiguo and He, Yuan and Mottola, Luca and Li, Shuai and Sun, Yimiao and Li, Jinming and Jing, Hua and Wang, Ting and Wang, Yulei},\njournal={ACM GetMobile: Mobile Computing and Communications},\npublisher = {ACM},\nyear = {2023},\n}\n",
         "authors": {
