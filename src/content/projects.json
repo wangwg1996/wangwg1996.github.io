@@ -2,6 +2,14 @@
     {
         "category": "Research", "list": [
         {
+            "name": "MetaSpeaker", 
+            "url": "https://dl.acm.org/doi/10.1145/3570361.3613279", 
+            "content": "An advanced speaker that can project audible sources precisely in space, even down to a single point. By using air’s nonlinearity, Meta-Speaker reproduces sound through intersecting ultrasonic beams from two arrays, creating a perceivable source in 3D space.", 
+            "figure": "./files/Fig/MetaSpeaker.png",
+            "figurewidth": "800",
+            "title": "Acoustic Source Projection by Exploiting Air Nonlinearity"
+        },
+        {
             "name": "MicNest", 
             "url": "https://micnest.github.io/", 
             "content": "An acoustic localization system for precise drone landing. MicNest is able to localize a drone <b>120 m</b> away with <b>0.53%</b> relative localization error at <b>20 Hz</b> location update frequency.", 
