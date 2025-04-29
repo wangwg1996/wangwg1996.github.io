@@ -6,7 +6,7 @@
 @import "./position.css";
 
 body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -88,30 +88,32 @@ p.note {
 }
 
 .badge-abs {
-    color: white;
-    background-color: #29abe0;
+    color: #222529c0;
+    background-color: #dfe2e593;
+    /* border: 1.5px solid #222529c0; */
 }
 
 .badge-abs:hover {
-    background-color: #438bb7;
+    background-color: #c3c9cf;
 }
 
 .badge-bib {
-    color: #222529;
-    background-color: #dfe2e5;
+    color: #222529c0;
+    background-color: #dfe2e593;
 }
 
 .badge-bib:hover {
     background-color: #c3c9cf;
 }
 
+
 .badge-slides {
-    color: white;
-    background-color: green;
+    color: #222529c0;
+    background-color: #dfe2e593;
 }
 
 .badge-slides:hover {
-    background-color: rgba(0, 128, 0, 0.8);
+    background-color: #c3c9cf;
 }
 
 .badge-code {
@@ -124,12 +126,12 @@ p.note {
 }
 
 .badge-video {
-    color: #fcf0e4;
-    background-color: #d88d54;
+    color: #222529c0;
+    background-color: #dfe2e593;
 }
 
 .badge-video:hover {
-    background-color: #d88d54d4;
+    background-color: #c3c9cf;
 }
 
 .badge-demo {
@@ -139,6 +141,24 @@ p.note {
 
 .badge-demo:hover {
     background-color: rgba(220, 20, 60, 0.8);
+}
+
+.badge-award {
+    color: white;
+    background-color: crimson;
+}
+
+.badge-award:hover {
+    background-color: rgba(220, 20, 60, 0.8);
+}
+
+.badge-home:hover {
+    background-color: rgba(29, 29, 29, 0.905);
+}
+
+.badge-home {
+    color: white;
+    background-color: rgba(29, 29, 29, 0.905);
 }
 
 button.bib {

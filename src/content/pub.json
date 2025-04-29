@@ -2,11 +2,26 @@
 
 
     {
+        "bibtex": "@inproceedings{weiguo2025sigcomm, title={Acoustic Backscatter Network for Vehicle Body-in-White}, author={Wang, Weiguo  and He, Yuan and Xie, Yadong and Xie, Chuyue and Kai, Yi and Hu, Chengchen }, booktitle={Proceedings of the ACM SIGCOMM 2025 Conference, ACM SIGCOMM'25},  pages={1--16}, year={2025}, publisher={ACM}}",
+        "authors": {
+            "boldAuthors": ["Weiguo Wang"]
+        },
+        "note": "SIGCOMM'25",
+        "resources": {
+            "pdf": ""
+        },
+        "type": true,
+        "abstract": "To be appear"
+    },
+ 
+
+
+    {
         "bibtex": "@article{liu2024real, title={Real-Time Continuous Activity Recognition With a Commercial mmWave Radar}, author={Liu, Yunhao and Zhang, Jia and Chen, Yande and Wang, Weiguo and Yang, Songzhou and Na, Xin and Sun, Yimiao and He, Yuan}, journal={IEEE Transactions on Mobile Computing, IEEE TMC}, number={01}, pages={1--14}, year={2024}, publisher={IEEE Computer Society}}",
         "authors": {
             "boldAuthors": ["Weiguo Wang"]
         },
-        "note": "",
+        "note": "TMC'24",
         "resources": {
             "pdf": ""
         },
@@ -19,7 +34,7 @@
         "authors": {
             "boldAuthors": ["Weiguo Wang"]
         },
-        "note": "",
+        "note": "TMC'23",
         "resources": {
             "pdf": "./files/PDF/AIM_TMC.pdf"
         },
@@ -35,7 +50,7 @@
                 "Yuan He"
             ]
         },
-        "note": "",
+        "note": "GetMobile'23",
         "resources": {
             "pdf": "./files/PDF/MicNest_GetMobile.pdf",
             "highlight": "https://www.sigmobile.org/pubs/getmobile/"
@@ -50,7 +65,7 @@
                 "Yuan He"
             ]
         },
-        "note": "",
+        "note": "SenSys'23",
         "resources": {
             "pdf": "./files/PDF/BIFROST_conf.pdf",
             "slides": "./files/Slides/BIFROST_PPT.pdf"
@@ -69,7 +84,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "MobiCom'23",
         "resources": {
             "pdf": "./files/PDF/Metaspeaker_mobicom.pdf",
             "slides": "./files/Slides/MetaSpeaker.pptx",
@@ -95,7 +110,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "IEEE Communications Surveys & Tutorials",
         "resources": {
             "pdf": "./files/PDF/A_Survey_of_mmWave.pdf",
             "slides": null,
@@ -119,7 +134,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "TMC'23",
         "resources": {
             "pdf": "./files/PDF/MicNest_tmc_earlyaccess.pdf",
             "slides": null,
@@ -143,7 +158,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "SenSys'22",
         "resources": {
             "pdf": "./files/PDF/MicNest.pdf",
             "slides": "./files/Slides/MicNest.pdf",
@@ -167,7 +182,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "SenSys'22",
         "resources": {
             "pdf": "./files/PDF/AIM.pdf",
             "slides": "./files/Slides/AIM.pdf",
@@ -191,7 +206,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "TMC'22",
         "resources": {
             "pdf": "./files/PDF/Symphony_tmc.pdf",
             "slides": null,
@@ -214,7 +229,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "Ubicomp/IMWUT'22",
         "resources": {
             "pdf": "./files/PDF/Motorbeat.pdf",
             "slides": "./files/Slides/motorbeat_slides.pptx",
@@ -237,7 +252,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "SenSys'20",
         "resources": {
             "pdf": "./files/PDF/Symphony_sensys.pdf",
             "slides": "./files/Slides/symphony_slides.pptx",
@@ -260,7 +275,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "IPSN'21",
         "resources": {
             "pdf": "./files/PDF/GWaltz_IPSN.pdf",
             "slides": null,
@@ -283,7 +298,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "ICCCN'20",
         "resources": {
             "pdf": "./files/PDF/Chordmics.pdf",
             "slides": null,
@@ -306,7 +321,7 @@
             ],
             "equalContributionAuthors": null
         },
-        "note": "",
+        "note": "SECON'19",
         "resources": {
             "pdf": "./files/PDF/Adacomm.pdf",
             "slides": null,
