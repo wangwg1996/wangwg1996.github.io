@@ -22,31 +22,52 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Build job
+  # # Build job
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #     - name: Setup node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 18.14.2
+  #         npm-version: 9.5.1
+  #         cache: 'npm'
+  #     - name: Setup Pages
+  #       id: pages
+  #       uses: actions/configure-pages@v2
+  #     - name: Build with npm
+  #       # Outputs to the './_site' directory by default
+  #       run: |
+  #         npm install
+  #         npm run build
+  #     - name: Upload artifact
+  #       # Automatically uploads an artifact from the './_site' directory by default
+  #       uses: actions/upload-pages-artifact@v2
+  #       with:
+  #         path: ./dist
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18.14.2
-          npm-version: 9.5.1
-          cache: 'npm'
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v2
-      - name: Build with npm
-        # Outputs to the './_site' directory by default
-        run: |
-          npm install
-          npm run build
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./dist
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout source code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'   # 不必指定 patch 版本（自动跟随官方维护）
+        cache: 'npm'
+
+    - name: Install dependencies and build
+      run: |
+        npm install
+        npm run build
+
+    - name: Upload build output
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: ./dist
 
   # Deployment job
   deploy:
