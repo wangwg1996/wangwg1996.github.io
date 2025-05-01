@@ -1,4 +1,18 @@
 [
+    
+
+    {
+        "bibtex": "@inproceedings{weiguo2025icml, title={Teaching Physical Awareness to LLMs through Sounds}, author={Wang, Weiguo  and Nie, Andy and Zhou, Wenrui and Kai, Yi and Hu, Chengchen }, booktitle={Proceedings of the Forty-second International Conference on Machine Learning, ICML'25},  pages={1--18}, year={2025}}",
+        "authors": {
+            "boldAuthors": ["Weiguo Wang"]
+        },
+        "note": "ICML'25",
+        "resources": {
+            "pdf": ""
+        },
+        "type": true,
+        "abstract": "To be appear"
+    },
 
 
     {
