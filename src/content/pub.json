@@ -8,7 +8,7 @@
         },
         "note": "ICML'25",
         "resources": {
-            "pdf": ""
+            "pdf": "./files/PDF/ACORN_icml.pdf"
         },
         "type": true,
         "abstract": "To be appear"
