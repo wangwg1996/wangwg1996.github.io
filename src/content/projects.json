@@ -2,9 +2,17 @@
     {
         "category": "Research", "list": [
         {
+            "name": "Acoustic Backscatter Network", 
+            "url": "", 
+            "content": "ArachNet is a pioneering acoustic backscatter network designed to monitor the structural health of a vehicle’s Body-in-White (BiW) — the core metal frame of a car. Traditional wired or wireless sensors face challenges in such metallic environments due to weight, integration complexity, or signal interference. ArachNet solves this by turning the metal body itself into a medium for both energy and data transmission.  This system uses battery-free tags that harvest energy from vibrations and communicate via low-power acoustic backscatter, eliminating the need for wiring or batteries. We design ultra-low-power hardware and a novel distributed network protocol to support reliable, collision-free communication across many tags. ArachNet has been  deployed on a real electric SUV, demonstrating its ability to provide scalable, energy-efficient monitoring for smart vehicles and offering new possibilities for embedded sensing in harsh, enclosed environments. This work appears in the proceedings of ACM SIGCOMM 2025.", 
+            "figure": "./files/Fig/ArachNet.png",
+            "figurewidth": "800",
+            "title": "Acoustic Backscatter Network for Vehicle Body-in-White"
+        },
+        {
             "name": "Acoustic LLM", 
             "url": "", 
-            "content": "Large Language Models (LLMs) have shown remarkable capabilities in text and multimodal processing, yet they fundamentally lack physical awareness--understanding of real-world physical phenomena. We explore the feasibility of teaching LLMs physical awareness through sound, focusing on fundamental physical phenomena like the Doppler effect, multipath effect, and spatial relationships. To overcome data scarcity, we introduce a physics-based simulator combining real-world sound sources with controlled physical channels to generate diverse training data. Using this simulator, we build AQA-PHY, a comprehensive Audio Question-Answer dataset, and propose an audio encoder that processes both magnitude and phase information. By connecting our audio encoder to state-of-the-art LLMs, we demonstrate reasonable results in both simulated and real-world tasks, such as line-of-sight detection, Doppler effect estimation, and Direction-of-Arrival estimation, paving the way for enabling LLMs to understand physical phenomena.", 
+            "content": "Large Language Models (LLMs) have shown remarkable capabilities in text and multimodal processing, yet they fundamentally lack physical awareness--understanding of real-world physical phenomena. We explore the feasibility of teaching LLMs physical awareness through sound, focusing on fundamental physical phenomena like the Doppler effect, multipath effect, and spatial relationships. To overcome data scarcity, we introduce a physics-based simulator combining real-world sound sources with controlled physical channels to generate diverse training data. Using this simulator, we build AQA-PHY, a comprehensive Audio Question-Answer dataset, and propose an audio encoder that processes both magnitude and phase information. By connecting our audio encoder to state-of-the-art LLMs, we demonstrate reasonable results in both simulated and real-world tasks, such as line-of-sight detection, Doppler effect estimation, and Direction-of-Arrival estimation, paving the way for enabling LLMs to understand physical phenomena. This work appears in the proceedings of ICML 2025.", 
             "figure": "./files/Fig/illus_icml_2025_0.png",
             "figurewidth": "500",
             "title": "Teaching Physical Awareness to LLMs through Sounds"
