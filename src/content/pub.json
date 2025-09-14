@@ -22,7 +22,8 @@
         },
         "note": "SIGCOMM'25",
         "resources": {
-            "pdf": "./files/PDF/ArachNet_SIGCOMM.pdf"
+            "pdf": "./files/PDF/ArachNet_SIGCOMM.pdf",
+            "slides": "./files/Slides/ArachNet_SIGCOMM25.pptx"
         },
         "type": true,
         "abstract": "To be appear"
