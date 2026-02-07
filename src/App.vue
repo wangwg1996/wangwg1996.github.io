@@ -2,10 +2,14 @@
 import Bio from './components/Bio.vue'
 import NewsList from './components/NewsList.vue'
 import EducationList from './components/EducationList.vue'
+import ExperienceList from './components/ExperienceList.vue'
 import PublicationList from './components/PublicationList.vue'
 import AwardList from './components/AwardList.vue'
 import Footer from './components/Footer.vue'
 import ProjectList from './components/ProjectList.vue'
+
+// Get git commit date from build time
+const updateDate = __GIT_COMMIT_DATE__
 </script>
 
 <template>
@@ -18,6 +22,8 @@ import ProjectList from './components/ProjectList.vue'
     <NewsList />
     <hr>
     <EducationList />
+    <hr>
+    <ExperienceList />
     <hr>
     <PublicationList />
     <hr>
@@ -37,7 +43,7 @@ import ProjectList from './components/ProjectList.vue'
         <a href="http://tns.thss.tsinghua.edu.cn/sun/" target="_blank">The <b>SUN</b> Group</a>
         | <a href="http://www.greenorbs.org/people/heyuan/" target="_blank">Prof. Yuan He</a>
         | <a href="https://micnest.github.io/" target="_blank">Project MicNest</a>
-        <br><br>Updated by Weiguo Wang in 2024.09. 😜
+        <br><br>Updated by Weiguo Wang in {{ updateDate }}. 😜
       </div>
   </div>
   </footer>

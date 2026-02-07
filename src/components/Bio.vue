@@ -10,12 +10,12 @@ const description = computed(() => {
 </script>
 
 <template>
-  <div class="row items-align-bottom">
+  <div class="row items-align-top">
     <div class="col-f4">
       <h1 style="font-size: 16pt">{{ metaContent.name }}</h1>
       <div style="font-size: 12pt" v-html="description"></div>
     </div>
-    <div>
+    <div style="flex-shrink: 0; margin-left: 2rem;">
       <img class="col" src="../assets/personal-photo.jpg" width="240" alt="personal photo">
     </div>
   </div>

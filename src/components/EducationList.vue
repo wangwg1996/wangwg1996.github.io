@@ -14,10 +14,15 @@ const idPrefix = "education"
 <template>
   <h2 style="font-size: 20pt"> Education</h2>
   <div class="row items-align-top" v-for="(education, index) in eduArr" :key="index">
-    <label class="col" :for="`${idPrefix}-${index}`">{{ education.date }}</label>
+    <label class="col date-col" :for="`${idPrefix}-${index}`">{{ education.date }}</label>
     <div class="col flex-start tight-list" :id="`${idPrefix}-${index}`" v-html="education.content"></div>
   </div>
 </template>
 
+<style scoped>
+.date-col {
+  min-width: 165px;
+}
+</style>
 
 <!-- 🎓 -->
