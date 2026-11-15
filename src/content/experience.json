@@ -1,15 +1,15 @@
 [
     {
         "date": "2025.12 - Present", 
-        "content": "<b>Staff Researcher</b> &nbsp; | &nbsp; <b>ByteDance</b> <br> <span style='color: #555; font-size: 11pt;'>Working on on-device large language models, with a particular focus on Audio/Acoustic capabilities. <br> <i class='fa fa-envelope'></i> weiguo.wang@bytedance.com</span>"
+        "content": "<b>Research &amp; Engineering</b> &nbsp; | &nbsp; <b>ByteDance</b> <br> <span style='color: var(--text-secondary); font-size: 11pt;'>Developing on-device LLMs, speech and audio technologies, and voice agents for mobile hardware. My work spans model research, algorithm development, and end-to-end system implementation. <br> <i class='fa fa-envelope'></i> weiguo.wang@bytedance.com</span>"
     },
     {
         "date": "2025.06 - 2025.12", 
-        "content": "<b>Research Scientist</b> &nbsp; | &nbsp; <b><a href='https://www.19pine.ai/' target='_blank' style='color: inherit; text-decoration: none;'>PINE AI (19pine)</a></b> <br> <span style='color: #555; font-size: 11pt;'>Startup company specializing in Voice Agent technology. Developed AI phone agents that autonomously make phone calls to handle tasks such as complaints, bill negotiations, service cancellations, refunds, and compensation for users. <br> <i class='fa fa-envelope'></i> weiguo.wang@19pine.ai</span>"
+        "content": "<b>Research Scientist</b> &nbsp; | &nbsp; <b><a href='https://www.19pine.ai/' target='_blank' style='color: inherit; text-decoration: none;'>PINE AI (19pine)</a></b> <br> <span style='color: var(--text-secondary); font-size: 11pt;'>Developed voice agents that make phone calls on behalf of users to handle complaints, negotiate bills, cancel services, and request refunds or compensation. <br> <i class='fa fa-envelope'></i> weiguo.wang@19pine.ai</span>"
     },
     {
         "date": "2023.07 - 2025.06", 
-        "content": "<b>Staff Engineer</b> &nbsp; | &nbsp; <b>NIO (蔚来汽车)</b>, Technology Planning Department <br> <span style='color: #555; font-size: 11pt;'>Worked on multimodal sensing for automotive applications. <br> <i class='fa fa-envelope'></i> weiguo.wang2@nio.com <span style='color: #999;'>(inactive)</span></span>"
+        "content": "<b>Staff Engineer</b> &nbsp; | &nbsp; <b>NIO (蔚来汽车)</b>, Technology Planning Department <br> <span style='color: var(--text-secondary); font-size: 11pt;'>Worked on multimodal sensing for automotive applications. <br> <i class='fa fa-envelope'></i> weiguo.wang2@nio.com <span style='color: var(--text-secondary);'>(inactive)</span></span>"
     }
 ]
 

@@ -4,44 +4,152 @@ import { convertMarkdownToHtml } from '../utils'
 import metaJson from '../content/meta.json'
 
 const metaContent = ref(metaJson)
-const description = computed(() => {
-  return convertMarkdownToHtml(metaContent.value.description)
-})
+const bio = computed(() => ({
+  introduction: convertMarkdownToHtml(metaContent.value.introduction),
+  research: convertMarkdownToHtml(metaContent.value.research),
+  education: convertMarkdownToHtml(metaContent.value.education),
+}))
 </script>
 
 <template>
-  <div class="row items-align-top">
-    <div class="col-f4">
-      <h1 style="font-size: 16pt">{{ metaContent.name }}</h1>
-      <div style="font-size: 12pt" v-html="description"></div>
+  <div class="profile-intro">
+    <h1 class="profile-name">{{ metaContent.name }}</h1>
+    <div class="profile-current" v-html="bio.introduction"></div>
+    <div class="profile-photo">
+      <img src="../assets/personal-photo.jpg" width="1677" height="1473" alt="Weiguo Wang">
     </div>
-    <div style="flex-shrink: 0; margin-left: 2rem;">
-      <img class="col" src="../assets/personal-photo.jpg" width="240" alt="personal photo">
+    <div class="profile-contact">
+      <p class="profile-email">
+        <b>E-Mail:</b>
+        <a :href="`mailto:${metaContent.email}`">{{ metaContent.email }}</a>
+        <span>(permanent)</span>
+      </p>
+      <div class="profile-links">
+        <a v-for="(contact, key) in metaContent.contact" :key="key"
+          :href="contact.url" target="_blank" rel="noopener noreferrer" class="custom-link">
+          <i :class="contact.icon" aria-hidden="true"></i>{{ key }}
+        </a>
+      </div>
     </div>
   </div>
-  <div class="row flex-start">
-    <div style="color: black; font-size: 12pt; font-weight: bold" class="m-r1 m-tb-08" v-for="(contact, key) in metaContent.contact" :key="key">
-      <i :class="contact.icon"></i>
-      <a :href="contact.url" target="_blank" class="custom-link">{{ key }}</a>
-    </div>
+  <div class="profile-background">
+    <div v-html="bio.research"></div>
+    <div v-html="bio.education"></div>
   </div>
-  
-  <!-- <div class="row flex-start">
-    <div style="font-size: 12pt" class="m-r1 m-tb-05" v-for="(contact, key) in metaContent.contact" :key="key">
-      <i :class="contact.icon"></i>
-      <a :href="contact.url" target="_blank">{{ key }}</a>
-    </div>
-  </div> -->
 </template>
 
 
 <style scoped>
-.custom-link {
-  color: rgba(28, 28, 28, 0.8);
-  text-decoration: none;
+.profile-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  grid-template-areas:
+    "name photo"
+    "current photo"
+    "contact photo";
+  gap: 14px 48px;
+  align-items: start;
+  margin-bottom: 30px;
 }
-.custom-link:hover {
-  color: rgba(28, 28, 28, 0.8);
+
+.profile-name {
+  grid-area: name;
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.profile-current {
+  grid-area: current;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.profile-current :deep(p) {
+  margin: 0;
+}
+
+.profile-photo {
+  grid-area: photo;
+}
+
+.profile-photo img {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-contact {
+  grid-area: contact;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.profile-email {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.3em;
+  margin: 0;
+}
+
+.profile-email a {
+  overflow-wrap: anywhere;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 20px;
+  margin-top: 6px;
+}
+
+.profile-background {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.profile-background :deep(p) {
+  margin: 0 0 18px;
+}
+
+.custom-link {
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.custom-link:hover,
+.custom-link:focus-visible {
+  color: inherit;
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .profile-intro {
+    grid-template-columns: minmax(0, 1fr) 105px;
+    grid-template-areas:
+      "name photo"
+      "current current"
+      "contact contact";
+    gap: 18px 14px;
+    margin-bottom: 28px;
+  }
+
+  .profile-name {
+    align-self: center;
+    font-size: 24px;
+  }
+
+  .profile-photo img {
+    width: 105px;
+  }
+
+  .profile-links {
+    gap: 6px 16px;
+  }
 }
 </style>

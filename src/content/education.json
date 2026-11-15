@@ -1,4 +1,4 @@
 [
-    {"date": "2018.09 - 2023.06", "content": "<b>Ph.D.</b> &nbsp; | &nbsp; <b>Tsinghua University</b> <br> <span style='color: #555; font-size: 11pt;'><i class='fa fa-envelope'></i> wwg18@mails.tsinghua.edu.cn <span style='color: #999;'>(inactive)</span></span>"},
+    {"date": "2018.09 - 2023.06", "content": "<b>Ph.D.</b> &nbsp; | &nbsp; <b>Tsinghua University</b> <br> <span style='color: var(--text-secondary); font-size: 11pt;'><i class='fa fa-envelope'></i> wwg18@mails.tsinghua.edu.cn <span style='color: var(--text-secondary);'>(inactive)</span></span>"},
     {"date": "2014.09 - 2018.06", "content": "<b>Bachelor</b> &nbsp; | &nbsp; University of Electronic Science and Technology of China (<b>UESTC</b>)"}
 ]

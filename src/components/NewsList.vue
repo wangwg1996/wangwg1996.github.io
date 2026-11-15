@@ -5,7 +5,7 @@ import { convertMarkdownContentToHtml } from '../utils';
 import newsJson from '../content/news.json'
 
 const showAll = ref(false)
-const topN = 15
+const topN = 5
 
 const newsArr = computed(() => {
   return convertMarkdownContentToHtml(newsJson)
@@ -44,7 +44,7 @@ const idPrefix = "news"
 }
 
 .toggle-link {
-  color: #555;
+  color: var(--text-secondary);
   font-size: 11pt;
   cursor: pointer;
   text-decoration: none;
@@ -54,7 +54,7 @@ const idPrefix = "news"
 }
 
 .toggle-link:hover {
-  color: #000;
+  color: inherit;
   border-bottom-color: #000;
 }
 </style>

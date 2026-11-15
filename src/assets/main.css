@@ -5,6 +5,16 @@
 @import "./grid.css";
 @import "./position.css";
 
+:root {
+    --text-secondary: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-secondary: #b3b3b3;
+    }
+}
+
 body {
     max-width: 1000px;
     margin: 40px auto;
@@ -14,6 +24,16 @@ body {
 header {
     margin-top: 40px;
     font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 24px auto;
+    }
+
+    header {
+        margin-top: 24px;
+    }
 }
 
 footer {

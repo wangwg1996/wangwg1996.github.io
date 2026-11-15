@@ -1,6 +1,9 @@
 {
     "name": "Weiguo Wang (王伟国)",
-    "description": "I am currently a Staff Researcher at ByteDance, where my research focuses on building Audio/Acoustic capabilities for next-generation voice AI, including on-device LLMs and voice agents. <br><br> My research interests lie at the intersection of acoustic sensing, signal processing, and machine learning. Over the years, my work has explored acoustic/audio technologies across diverse computing platforms — distributed microphones and smart speakers, home appliances, drones and vehicles, and mobile devices with on-device AI. I am passionate about building end-to-end systems that bridge hardware sensing, signal processing, and intelligent algorithms. <br><br> I obtained my Ph.D. degree from Tsinghua University, advised by [Prof. Yuan He](http://tns.thss.tsinghua.edu.cn/sun/members/YuanHe). <br> <br><b>E-Mail:</b>  <a>wangwg.wwg@gmail.com</a> (permanent)  &nbsp;    ",
+    "introduction": "I work on research and engineering at ByteDance, focusing on on-device LLMs, speech and audio technologies, and voice agents for mobile hardware.",
+    "research": "My research combines acoustics, signal processing, and machine learning, with an emphasis on translating physical insights into working systems. I investigate how physical signals carry information about the world, and how algorithms and hardware can be designed together to enable sensing, communication, and interaction under real-world constraints. More recently, I have extended this perspective to LLMs, exploring how sound can support physical understanding.",
+    "education": "I obtained my Ph.D. degree from Tsinghua University, advised by [Prof. Yuan He](http://tns.thss.tsinghua.edu.cn/sun/members/YuanHe).",
+    "email": "wangwg.wwg@gmail.com",
     "contact": {
         "Google Scholar": {"icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=B8b1uqsAAAAJ&hl=en"},
         "ResearchGate": {"icon": "ai ai-researchgate", "url": "https://www.researchgate.net/profile/Weiguo-Wang-7"},

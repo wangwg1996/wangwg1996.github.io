@@ -1,23 +1,16 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { execSync } from 'child_process'
 
-// Get git commit date
-function getGitCommitDate() {
-  try {
-    const timestamp = execSync('git log -1 --format=%ct').toString().trim()
-    const date = new Date(parseInt(timestamp) * 1000)
-    const year = date.getFullYear()
-    const month = String(date.getMonth() + 1).padStart(2, '0')
-    return `${year}.${month}`
-  } catch (e) {
-    // Fallback to current date if git is not available
-    const now = new Date()
-    const year = now.getFullYear()
-    const month = String(now.getMonth() + 1).padStart(2, '0')
-    return `${year}.${month}`
-  }
+function getBuildDate() {
+  const parts = new Intl.DateTimeFormat('en', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit'
+  }).formatToParts(new Date())
+  const year = parts.find(part => part.type === 'year').value
+  const month = parts.find(part => part.type === 'month').value
+  return `${year}.${month}`
 }
 
 // https://vitejs.dev/config/
@@ -29,6 +22,6 @@ export default defineConfig({
     }
   },
   define: {
-    __GIT_COMMIT_DATE__: JSON.stringify(getGitCommitDate())
+    __BUILD_DATE__: JSON.stringify(getBuildDate())
   }
 })

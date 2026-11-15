@@ -1,4 +1,5 @@
 [
+    {"date": "2026.06", "content": "I’m proud of our early work on [Pine Voice](https://pine.im/features/voice-assistant). Both Preview and 1.0 went on to reach <b>#1 on [τ³‑Voice](https://taubench.com/progress/?benchmark=voice)</b>, with 1.0 ahead of GPT‑Live and Grok Voice."},
     {"date": "2025.12", "content": "Joined <b>ByteDance</b>, focusing on on-device Audio/Acoustic LLMs."},
     {"date": "2025.05", "content": "One paper on teaching LLMs to understand physical world is accepted by <b>ICML 2025</b>."},
     {"date": "2025.04", "content": "Our work <i>ArachNet</i> is accepted by <b>ACM SIGCOMM 2025</b>, a proud milestone for me!"},

@@ -8,8 +8,8 @@ import AwardList from './components/AwardList.vue'
 import Footer from './components/Footer.vue'
 import ProjectList from './components/ProjectList.vue'
 
-// Get git commit date from build time
-const updateDate = __GIT_COMMIT_DATE__
+// Use the build month in the site's timezone.
+const updateDate = __BUILD_DATE__
 </script>
 
 <template>
@@ -21,9 +21,9 @@ const updateDate = __GIT_COMMIT_DATE__
   <main>
     <NewsList />
     <hr>
-    <EducationList />
-    <hr>
     <ExperienceList />
+    <hr>
+    <EducationList />
     <hr>
     <PublicationList />
     <hr>
