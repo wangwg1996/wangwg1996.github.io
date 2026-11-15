@@ -62,8 +62,13 @@ const bio = computed(() => ({
 .profile-current {
   grid-area: current;
   min-width: 0;
-  font-size: 16px;
-  line-height: 1.65;
+}
+
+.profile-current,
+.profile-contact,
+.profile-background {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .profile-current :deep(p) {
@@ -85,8 +90,6 @@ const bio = computed(() => ({
 .profile-contact {
   grid-area: contact;
   min-width: 0;
-  font-size: 15px;
-  line-height: 1.6;
 }
 
 .profile-email {
@@ -105,11 +108,6 @@ const bio = computed(() => ({
   flex-wrap: wrap;
   gap: 5px 20px;
   margin-top: 6px;
-}
-
-.profile-background {
-  font-size: 16px;
-  line-height: 1.65;
 }
 
 .profile-background :deep(p) {
